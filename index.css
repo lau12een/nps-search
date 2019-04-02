@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}

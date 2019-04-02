@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>National Park Service Search App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+    <h1>Curious to see National Parks in your area?</h1>
+    <h2> Search below for info!</h2>
+    <form>
+        <label for="search-term">Search by state<br>(enter state code, for more than one, please separate by commas)</label>
+        <input type="text" name="search-text" id="search-text" placeholder="Ex. 'CA, NV'" required><br>
+        
+        <label for="max-results">Adjust number of results <br>
+            (max is 10)</label>
+        <input type="number" name="max-results" id="max-results" min="1" max="10" value="at most 10" required><br>
+        <input type="submit" value="Search!">
+    </form>
+    
+    <main role="main">
+        <section id="results" class="hidden">
+            <h1>Results</h1>
+            <ul class="js-results"></ul>
+        </section>
+    </main>
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
