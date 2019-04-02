@@ -87,12 +87,9 @@ function format(obj) {
     if (obj.line2) {
         result += `${obj.line2}<br>`;
     }
-    if (obj.line3) {
-        result += `${obj.line3}<br>`;
-    }
     return result;
 }
-// function to format address
+// function to format address lines
 
 /**********Function to display results ********/
 
@@ -110,7 +107,7 @@ function displayResults(responseJson) {
         <li><a href="${responseJson.data[i].url}">Click here for ${responseJson.data[i].fullName} website</a></li>
         `);
         $('#results').removeClass('hidden');
-        //list with the national park's name, description, address and website url
+        //lists the national park's name, description, address and website url
     }
 }
 
